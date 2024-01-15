@@ -2,7 +2,7 @@
 // routes/web.php
 
 use App\Http\Controllers\ProductoController;
-Route::get('/gestion-almacen', [ProductoController::class, 'gestionAlmacen'])->name('gestion-almacen');
+Route::get('/', [ProductoController::class, 'gestionAlmacen'])->name('gestion-almacen');
 
 Route::get('/productos', [ProductoController::class, 'index'])->name('productos.index');
 Route::get('/productos/create', [ProductoController::class, 'create'])->name('productos.create');
